@@ -1,0 +1,245 @@
+/*  
+Theme Name: christmaschild
+Template: hero
+Theme URI: http://themetrust.com/themes/hero
+Description: A Minimal Portfolio Theme
+Version: 1.0.1
+Author: Theme Trust
+Author URI: http://themetrust.com
+Tags: portfolio, responsive, blog, clean, minimal, white, two-columns, threaded-comments, translation-ready, custom-menus
+
+TABLE OF CONTENTS
+
+01 - Reset
+02 - Global 
+03 - General Layout
+04 - Header
+05 - Content
+06 - Slideshow
+07 - Sidebar
+08 - Widgets
+09 - Comments
+10 - Pagination
+11 - Footer
+12 - Media Queries
+*/
+
+@import url("../hero/style.css");
+
+
+/* --- MEDIA --- */
+@media only screen and (max-width: 767px) {
+
+#logo { margin-left: 30px !important; }
+
+}
+
+
+@media only screen and (max-width: 479px) {
+
+
+}
+
+/* --- HI-RES --- */
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+#logo {
+	width: 183px;
+	height: 32px;
+	margin: 0px 0 0 2.5%;	
+	padding-left: 224px;
+	overflow: hidden;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-image: url('img/mhcpdxlogo1x2x.jpg');
+	background-size: 183px 32px;
+	background-repeat: no-repeat;
+}
+
+}
+
+
+
+body {
+	font-size: 100%;
+	font-family: Georgia, Times New Roman, sans-serif;	
+	width:auto; height:auto;	
+	padding: 0 0 0 0;
+	margin: 0;
+	color: #7d7d7b;	
+	background-color: #1b1b1b;	
+}
+
+
+
+h1, h2, h3, h4, h5, h6{		
+	margin: 0 0 15px 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #151515;
+	font-family: "Montserrat", Arial, sans-serif;
+}
+
+p {
+	line-height: 1.6em;
+	font-size: 1.0em;
+	margin: 0 0 20px 0;	
+	color: #151515;
+	font-family: Georgia, Times New Roman, sans-serif;	
+}
+
+#footer p {
+	line-height: 1.6em;
+	font-size: 0.7em;
+	margin: 0 0 20px 0;	
+	color: #ffffff;
+	font-family: Georgia, Times New Roman, sans-serif;	
+}
+
+
+
+#sidebar .widgetBox h3,
+#footer .widgetBox h3{
+	font-size: .75em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #606060;
+	font-family: "Montserrat", Arial, sans-serif;
+}
+
+#mainNav ul a{
+	line-height: 25px;	
+	color: #8f8f8f;
+	text-transform: uppercase;
+	font-size: .75em;
+	font-family: "Montserrat", Arial, sans-serif;	
+}
+
+.homeSection h3 {
+	font-size: 1em;	
+	margin: 0 auto 30px;
+	clear: both;
+	background: transparent url(images/line.gif) 0 center repeat-x;	
+	color: #555555;
+	text-transform: uppercase;
+	text-align: center;	
+	font-family: "Montserrat", Arial, sans-serif;	
+	width: 95%;
+	text-transform: uppercase;
+}
+
+.page-template-page-home-php #main {
+	padding-top: 20px;
+}
+
+#content .page.small h2{	
+	font-size: 1em;	
+	line-height: 1.3em;
+	font-family: "Montserrat", Arial, sans-serif;	
+	text-transform: uppercase;
+
+}
+
+#pageHead h1 {	
+	font-size: 1.4em;
+	line-height: .7em;
+	padding: 0;
+	margin-bottom: 0;	
+	display: block;
+	color: #9d0620;
+	font-family: "Montserrat", Arial, sans-serif;	
+	text-transform: uppercase;
+
+}
+
+.fb_share {
+	height: 26px;
+	margin-right: 10px;
+	padding: 0 1em;
+	display: inline-block;
+	line-height: 26px;
+	font-weight: bold;
+	border: 1px solid #8a9cc2;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	vertical-align: top;
+	font-family: Arial, sans-serif;
+	font-size: .8em;
+	background: url('img/fb_bg.png') repeat-x 0 0;
+	color: #fff !important;
+}
+
+input[type="text"], textarea {
+	background-color: #fafafa;	
+	padding: 10px;
+	font-family: Georgia, Times New Roman, sans-serif;	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #6a6a6a;	
+	border: 1px solid #ddd;
+	background:	#fafafa url(images/field_bkg.png) repeat-x;	
+}
+
+input[type="text"]:focus {outline: none; background-color: #f7f7f7;}
+
+input[type="email"], textarea {
+	background-color: #fafafa;	
+	padding: 10px;
+	font-family: Georgia, Times New Roman, sans-serif;	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #6a6a6a;	
+	border: 1px solid #ddd;
+	background:	#fafafa url(images/field_bkg.png) repeat-x;	
+}
+
+input[type="email"]:focus {outline: none; background-color: #f7f7f7;}
+
+select[type="selectbarthing"], textarea {
+	background-color: #fafafa;	
+	padding: 10px;
+	font-family: Georgia, Times New Roman, sans-serif;	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #6a6a6a;	
+	border: 1px solid #ddd;
+	background:	#fafafa url(images/field_bkg.png) repeat-x;	
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#content.full {
+	margin: 0 2.5% 20px 2.5%;
+	padding: 0 0 0 0 !important;
+	width: 95%;					
+}
+
+
+
+.home #content.full, .page-template-page-home-php #content.full {	
+	width: 95%;						
+}
+
+select[type="selectbarthing"]:focus {outline: none; background-color: #f7f7f7;}
